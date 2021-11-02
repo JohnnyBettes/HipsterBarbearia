@@ -1,0 +1,311 @@
+.header{
+	padding-top: 15px;
+	height: 120px;
+}
+
+.header .master{
+	display: flex;
+	justify-content: space-between;
+	align-content: center;
+}
+
+
+
+.header .master .menu{
+	display: flex;
+}
+
+.header .master .menu nav{
+	/*padding-top: 25px;*/
+}
+
+.header .master .menu ul{
+	display: flex;
+	padding-top: 46px;
+	border-right: 1px var(--cor-texto) solid;
+	margin-top: 15px;
+}
+
+.header .master .menu ul li{
+	list-style: none;
+	padding-top: 6px;
+	margin-right: 15px;
+}
+
+.header .master .menu ul li a{
+	color: var(--cor-texto);
+	font-family: var(--fonte-titulo);
+	letter-spacing: 2px;
+	font-size: 15px;
+	text-decoration: none;
+	transition: color 1s;
+}
+
+.header .master .menu ul li a:hover {
+	color: var(--cor-titulo);
+}
+
+.header .master .menu .social{
+	padding-top: 55px;
+	margin-left: 35px;
+
+}
+
+.header .master .menu .social a{
+	margin-left: 16px;
+}
+
+.header hr{
+	width: 95%;
+	margin: 0 auto;
+}
+
+.intro .master-intro{
+	display: flex;
+	
+}
+
+.intro .master-intro .img-intro{
+	width: 70%;
+	margin-top: 20px;
+}
+
+.intro .master-intro .conteudo-intro h1{ 
+	color: var(--cor-titulo);
+	font-size: 42px;
+	text-align: center;
+	letter-spacing: 3px;
+}
+
+.intro .master-intro .conteudo-intro p{
+	color: var(--cor-texto);
+	font-size: 20px;
+	line-height: 30px;
+	font-family: var(--fonte-texto);
+}
+
+.intro .master-intro .conteudo-intro .horario{
+	margin-top: -14px;
+}
+
+
+.equipe{
+	background-color: var(--cor-equipe);
+}
+
+.equipe h1{
+	text-align: center;
+	color: var(--cor-texto);
+	font-size: 42px;
+	letter-spacing: 3px;
+	padding-top: 20px;
+}
+
+.equipe .master-equipe {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.equipe .master-equipe .equipe-foto{
+	width: 30%;
+	margin-right: 27px;
+}
+
+.equipe .master-equipe .equipe-foto img{
+	width: 100%;
+	height: auto;
+}
+
+.equipe .master-equipe .equipe-foto a{
+	color: var(--cor-texto);
+	font-size: 22px;
+	text-decoration: none;
+	letter-spacing: 3px;
+	text-align: center;
+	font-family: var(--fonte-titulo);
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	padding: 15px 0;
+	transition: color 1s;
+}
+
+.equipe .master-equipe .equipe-foto a:hover{
+	color: var(--cor-titulo);
+}
+
+.janela-corte {
+	background-color: var(--cor-equipe);
+}
+
+.janela-corte p{
+	color: var(--cor-texto);
+	font-family: var(--fonte-titulo);
+}
+
+.janela-corte .linha{
+	border-bottom: 1px solid var(--cor-escura);
+    padding-bottom: 0;
+    height: 90px;
+}
+
+.janela-corte .master-cabecalho{
+	display: flex;
+	justify-content: space-between;
+}
+
+.janela-corte .master-cabecalho .linha-vertical {
+	border-left: 1px solid var(--cor-escura);
+	padding-left: 15px;
+	position: relative;
+	width: 50px;
+}
+
+.janela-corte .master-cabecalho .linha-vertical img{
+	position: absolute;
+	bottom: 10px;
+}
+
+.janela-corte .linha-baixo{
+	border-top: 1px solid var(--cor-escura);
+}
+
+.janela-corte .master-cortes{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.janela-corte h1{
+	color: var(--cor-texto);
+	text-align: center;
+}
+
+
+.janela-corte .master-cortes .cortes{
+	width: 31%;
+	height: 220px;
+	margin: 10px 10px 10px 0;
+}
+
+.janela-corte .master-cortes .cortes img{
+	width: 100%;
+	height: 220px;
+	object-fit: cover;
+}
+
+.footer{
+	padding: 20px 0;
+}
+
+.footer h1{
+	color: var(--cor-texto);
+	font-family: var(--fonte-titulo);
+	font-size: 30px;
+	text-align: center;
+}
+
+.footer .master-rodape{
+	display: flex;
+	text-align: center;
+	
+}
+
+.footer .master-rodape .endereco{
+	width: 33%;
+	
+}
+
+.footer .master-rodape .endereco p{
+	color: var(--cor-texto);
+	font-family: var(--fonte-titulo);
+	font-size: 20px;
+	margin-bottom: -5px;
+}
+
+@media (min-width: 1920px){
+	.container-adap{
+		width: 1440px;
+		margin: auto;
+	}
+}
+
+@media (max-width: 992px) {
+	.intro .master-intro{
+		flex-wrap: wrap;
+	}
+
+	.intro .master-intro .img-intro{
+		margin: auto;
+	}
+
+	.intro .master-intro .img-intro img{
+		width: 100%;
+	}
+
+	.equipe .master-equipe {
+		justify-content: center;
+	}
+
+	.equipe .master-equipe .equipe-foto{
+		width: 40%;
+	}
+}
+
+
+@media (max-width: 520px){
+	.header{
+		height: 223px;
+	}
+	
+	.header .master{
+		flex-wrap: wrap;
+	}
+
+	.header .master .logo {
+		width: 100%;
+	}
+
+	.header .master .logo img {
+		display: block;
+		margin: auto;
+		width: 120px;
+	}
+
+	.intro .master-intro{
+		padding-top: 50px;
+	}
+
+	janela-corte .master-cortes {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
+	.janela-corte .master-cortes .cortes {
+		width: 45%;
+	}
+}
+
+@media (max-width:320px){
+	.header .master .menu .social{
+		padding-top: 0;
+		margin-left: 0;
+	}
+
+	.header .master .menu .social img{
+		margin-top: 15px;
+	}
+
+	.footer .master-rodape{
+		flex-wrap: wrap;
+	}
+	
+	.footer .master-rodape .endereco {
+		width: 48%;
+		margin-bottom: 15px;
+	}
+
+	
+}
+
+
